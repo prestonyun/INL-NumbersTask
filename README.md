@@ -6,6 +6,4 @@ The delay between each displayed number can be edited in the BackEnd.java file.
 
 Created by Preston Yun for the Integrative Neuroscience Laboratory at Southern Illinois University Carbondale.
 
-For questions or comments, please send an email to prestonyun32@gmail.com
-
-Thank you!
+prestonyun32@gmail.com
