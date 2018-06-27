@@ -8,14 +8,12 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Random;
 import java.util.Vector;
 
 import javax.swing.AbstractAction;
 
 public class BackEnd {
 	
-	Random randA, randB, randC;
 	public static Vector<Integer> memory = new Vector<Integer>();
 	public static PrintWriter print;
 	
