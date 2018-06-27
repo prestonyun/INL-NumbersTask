@@ -1,6 +1,9 @@
+/* Created by Preston Yun for the Integrative Neuroscience Laboratory at Southern Illinois University Carbondale
+
+For questions or comments, please send an email to prestonyun32@gmail.com */
+
 import java.util.ArrayList;
 import java.util.Collections;
-//import java.util.Iterator;
 import java.util.Random;
 import java.util.Vector;
 
