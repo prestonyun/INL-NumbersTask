@@ -1,3 +1,7 @@
+/* Created by Preston Yun for the Integrative Neuroscience Laboratory at Southern Illinois University Carbondale
+
+For questions or comments, please send an email to prestonyun32@gmail.com */
+
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
