@@ -9,11 +9,11 @@ Sequences are contained in groups of 5 numbers, and 40% of groups contain a 3-in
 
 In the examples folder, there are three runnable jar files:
 
-The 1000ms program displays 144 groups, with 58 containing a valid sequence.
+> 1000ms: 144 groups, 58 valid sequences
 
-The 800ms program displays 180 groups, with 72 containing a valid sequence.
+> 800ms: 180 groups, 72 valid sequences
 
-The 600ms program displays 240 groups, with 96 containing a valid sequence.
+> The 600ms: 240 groups, 96 valid sequences
 
 # Credit
 
