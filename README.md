@@ -15,6 +15,8 @@ In the examples folder, there are three runnable jar files:
 
 > 600ms: 240 groups, 96 valid sequences
 
+# Sceenshots
+
 <img width="960" alt="screen1" src="https://user-images.githubusercontent.com/40635145/43986417-8a3b68d0-9cde-11e8-8220-2fdfc3cd6d3e.png">
 
 
