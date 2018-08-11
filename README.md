@@ -15,6 +15,8 @@ In the examples folder, there are three runnable jar files:
 
 > The 600ms: 240 groups, 96 valid sequences
 
+![screenshot](screenshots/screen1)
+
 # Credit
 
 Created by Preston Yun for the Integrative Neuroscience Laboratory at Southern Illinois University Carbondale.
