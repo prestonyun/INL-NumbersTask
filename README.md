@@ -15,7 +15,7 @@ In the examples folder, there are three runnable jar files:
 
 > The 600ms: 240 groups, 96 valid sequences
 
-![screenshot](screenshots/screen1)
+![screenshot](INL-NumbersTask/screenshots/screen1.png)
 
 # Credit
 
