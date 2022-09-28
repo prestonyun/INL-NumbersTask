@@ -41,6 +41,8 @@ public class NumberGenerator {
 		// Shuffle the ArrayList so the sequences will be displayed randomly
 		Collections.shuffle(sequences);
 		
+		// Not sure exactly what this does honestly, it seems to be a check for false-positives, and the appropriate correction
+		// Don't judge me, it works and I don't want to mess with it
 		for (int i = 0; i < sequences.size(); i++)
 		{
 			if (sequences.get(i) == true)
