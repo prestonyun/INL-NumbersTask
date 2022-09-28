@@ -24,4 +24,4 @@ In the examples folder, there are three runnable jar files:
 
 Created by Preston Yun for the Integrative Neuroscience Laboratory at Southern Illinois University Carbondale.
 
-prestonyun32@gmail.com
+prestonyun24@gmail.com
