@@ -5,7 +5,7 @@ Tests working memory and response time. Participants are required to press a res
 
 The delay between each displayed number can be edited in the BackEnd.java file.
 
-Sequences are contained in groups of 5 numbers, and 40% of groups contain a 3-in-a-row even or odd sequence. Each program runs for 12 minutes, after a 15 second countdown.
+Each program runs for 12 minutes, after a 15 second countdown.
 
 In the examples folder, there are three executable jar files:
 
@@ -23,7 +23,7 @@ In the examples folder, there are three executable jar files:
 
 Since this is a base test for cognition, it must be standardized. Therefore, the task must be randomized so there can be no preparation. It must also have a predetermined number of correct sequences, and it must run for a predetermined amount of time. 
 
-My solution was to create sequences off even/odd numbers that are 5 numbers in length, and connect them such that there will never be false-positives (sequences of 3 odd or even that occur due to randomization, and are not accounted for in the scoring). This came out to 10 target sequences (including 3-in-a-row), and 15 non-target sequences (not including 3-in-a-row).
+My solution was to create sequences of even/odd numbers that are 5 numbers in length, and connect them such that there will never be false-positives (sequences of 3 odd or even that occur due to randomization, and are not accounted for in the scoring). This came out to 10 target sequences (including 3-in-a-row), and 15 non-target sequences (not including 3-in-a-row).
 
 > Target Sequences: "OOOEE", "OOOEO", "EOOOE", "EEOOO", "OEOOO", "EEEOO", "EEEOE", "OEEEO", "OOEEE", "EOEEE"
 
