@@ -8,22 +8,13 @@ import java.util.Random;
 import java.util.Vector;
 
 public class NumberGenerator {
-	
 	public static String[] sequencesArray = new String[Numbers.numSequences];
-	public static int seqCounter = 0;
-	
-	// All of the numbers are stored as Integers in a Vector
+	// All the numbers are stored as Integers in a Vector
 	public static final Vector<Integer> numbers = new Vector<Integer>();
-	
-	public static final int[] evens = {2, 4, 6, 8};
-	public static final int[] odds = {1, 3, 5, 7, 9};
-	
 	// Target sequences contain three even or odd numbers in a row
 	public static final String[] tSequences = {"OOOEE", "OOOEO", "EOOOE", "EEOOO", "OEOOO", "EEEOO", "EEEOE", "OEEEO", "OOEEE", "EOEEE"};
-	
 	// Neutral sequences do not contain three even or odd numbers in a row
 	public static final String[] nSequences = {"OEOEO", "OOEOE", "OEOOE", "OEEOO", "OOEEO", "OOEOO", "OEEOE", "OEOEE", "EOEOE", "EEOEO", "EOEEO", "EOOEE", "EEOEE", "EEOOEE", "EOOEO"};
-
 	
 	public static void generateNumbers()
 	{
@@ -45,60 +36,41 @@ public class NumberGenerator {
 		// Don't judge me, it works and I don't want to mess with it
 		for (int i = 0; i < sequences.size(); i++)
 		{
-			if (sequences.get(i) == true)
-			{
-				sequencesArray[i] = tSequences[rand.nextInt(10)];
-				while (endChar == sequencesArray[i].charAt(0))
-					sequencesArray[i] = tSequences[rand.nextInt(10)];
-				
-				endChar = sequencesArray[i].charAt(4);
-			}
-			else
-			{
-				sequencesArray[i] = nSequences[rand.nextInt(15)];
-				while (endChar == sequencesArray[i].charAt(0))
-					sequencesArray[i] = nSequences[rand.nextInt(15)];
-				
-				endChar = sequencesArray[i].charAt(4);
-			}
-				
-		}
-		
-		for (String s : sequencesArray)
-		{
-			int[] numeric = convertToNumeric(s);
-			
-			for (Integer i : numeric)
-				numbers.add(i);
+			boolean isTarget = sequences.get(i);
+			String sequence;
+
+			do {
+				sequence = isTarget ? tSequences[rand.nextInt(10)] : nSequences[rand.nextInt(15)];
+			} while (sequence.charAt(0) == endChar);
+
+			endChar = sequence.charAt(4);
+			sequencesArray[i] = sequence;
+
+			for (final int num : convertToNumeric(sequence))
+				numbers.add(num);
 		}
 	}
 	
 	// Method to convert Strings to Numerical values. Also ensures that there will never be four even or odd numbers in a row
 	public static int[] convertToNumeric(String sequence)
 	{
-		int[] numeric = new int[5];
-		int cur = 0;
 		Random rand = new Random();
+		final int[] numeric = new int[5];
+		int cur = 0;
+		final int[] evens = {2, 4, 6, 8};
+		final int[] odds = {1, 3, 5, 7, 9};
 		
-		for (int i = 0; i < 5; i++)
-		{
-			if (sequence.charAt(i) == 'E')
-			{
-				numeric[i] = evens[rand.nextInt(4)];
-				while (numeric[i] == cur)
-					numeric[i] = evens[rand.nextInt(4)];
-				
-				cur = numeric[i];
-			}
-			else
-			{
-				numeric[i] = odds[rand.nextInt(5)];
-				while (numeric[i] == cur)
-					numeric[i] = odds[rand.nextInt(5)];
-				
-				cur = numeric[i];
-			}
-		} // end for
+		for (int i = 0; i < 5; i++) {
+			final boolean isEven = sequence.charAt(i) == 'E';
+			int[] values = isEven ? evens : odds;
+			int index = rand.nextInt(values.length);
+			numeric[i] = values[index];
+
+			while (numeric[i] == cur)
+				numeric[i] = values[rand.nextInt(values.length)];
+
+			cur = numeric[i];
+		}
 		
 		return numeric;
 	}

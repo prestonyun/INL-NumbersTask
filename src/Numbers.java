@@ -39,7 +39,6 @@ public class Numbers {
 	static long testBegin = 0, testEnd = 720000;
 	
 	// The introduction count-down is 15 seconds. 'cd' variable must be 17 for some reason
-	long cdBegin = 0, cdEnd = 15000;
 	int cd = 17;
 	
 	// Values for the number of sequences, based on the interval of the test
