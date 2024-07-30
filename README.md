@@ -1,5 +1,5 @@
 # INL-NumbersTask
-Tests working memory and response time. Participants are required to press a response key when three even or odd numbers are displayed sequentially.
+Application for use in the Integrative Neuroscience Laboratory at Southern Illinois University Carbondale. Tests working memory and response time. Participants are required to press a response key when three even or odd numbers are displayed sequentially.
 
 # Details
 
